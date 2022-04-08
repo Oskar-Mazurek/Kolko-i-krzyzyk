@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Kolko-i-krzyzyk/static/css/main.5386d9e0.css",
+    "main.js": "/Kolko-i-krzyzyk/static/js/main.feba16d5.js",
+    "static/js/787.d710bf9f.chunk.js": "/Kolko-i-krzyzyk/static/js/787.d710bf9f.chunk.js",
+    "static/media/tic-tac-toe.png": "/Kolko-i-krzyzyk/static/media/tic-tac-toe.475e6d0db84ab9158465.png",
+    "index.html": "/Kolko-i-krzyzyk/index.html",
+    "main.5386d9e0.css.map": "/Kolko-i-krzyzyk/static/css/main.5386d9e0.css.map",
+    "main.feba16d5.js.map": "/Kolko-i-krzyzyk/static/js/main.feba16d5.js.map",
+    "787.d710bf9f.chunk.js.map": "/Kolko-i-krzyzyk/static/js/787.d710bf9f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5386d9e0.css",
+    "static/js/main.feba16d5.js"
+  ]
+}
