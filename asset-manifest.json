@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Kolko-i-krzyzyk/static/css/main.7d1ba088.css",
+    "main.css": "/Kolko-i-krzyzyk/static/css/main.e9ad08b5.css",
     "main.js": "/Kolko-i-krzyzyk/static/js/main.27b7d81c.js",
     "static/js/787.d710bf9f.chunk.js": "/Kolko-i-krzyzyk/static/js/787.d710bf9f.chunk.js",
     "static/media/tic-tac-toe.png": "/Kolko-i-krzyzyk/static/media/tic-tac-toe.475e6d0db84ab9158465.png",
     "index.html": "/Kolko-i-krzyzyk/index.html",
-    "main.7d1ba088.css.map": "/Kolko-i-krzyzyk/static/css/main.7d1ba088.css.map",
+    "main.e9ad08b5.css.map": "/Kolko-i-krzyzyk/static/css/main.e9ad08b5.css.map",
     "main.27b7d81c.js.map": "/Kolko-i-krzyzyk/static/js/main.27b7d81c.js.map",
     "787.d710bf9f.chunk.js.map": "/Kolko-i-krzyzyk/static/js/787.d710bf9f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d1ba088.css",
+    "static/css/main.e9ad08b5.css",
     "static/js/main.27b7d81c.js"
   ]
 }
