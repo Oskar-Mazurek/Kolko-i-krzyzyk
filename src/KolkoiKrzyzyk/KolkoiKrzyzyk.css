@@ -1,28 +1,33 @@
 html {
-    background-color: rgb(13, 58, 194);
     overflow: scroll;
     overflow-x: hidden;
     overflow-y: hidden;
 }
 
+body {
+    background-color: rgb(13, 58, 194);
+    background-image: url('tic-tac-toe.png');
+    background-size: 30px;
+}
+
 .main {
     margin: 0px;
     padding: 0px;
+    flex-direction: column;
 }
 
 header {
     margin: 0;
     padding: 0;
     color: white;
-    background-color: rgb(13, 58, 194);
 }
 
 table td {
     border: 1px solid grey;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     float: middle;
-    background-color: white;
+    background-color: aqua;
     border-radius: 10px;
     border-bottom: 3px solid hsl(300, 50%, 5%);
     border-top: 3px solid hsl(231, 50%, 35%);
@@ -40,8 +45,8 @@ table td {
 
 table td:hover {
     border: 1px solid grey;
-    width: 110px;
-    height: 110px;
+    width: 100px;
+    height: 100px;
     background-color: lightblue;
     border-radius: 10px;
     filter: brightness(110%);
@@ -53,6 +58,8 @@ table td:hover {
     height: 1000px;
     float: left;
     background-color: rgb(13, 58, 194);
+    border-radius: 20px !important;
+    border: none !important;
 }
 
 .asideR {
@@ -60,27 +67,35 @@ table td:hover {
     height: 1000px;
     float: right;
     background-color: rgb(13, 58, 194);
+    border-radius: 20px !important;
+    border: none !important;
+    border-bottom: 3px solid hsl(300, 50%, 5%);
+    border-top: 3px solid hsl(231, 50%, 35%);
 }
 
-.Stopka, html, header {
+.Stopka {
     background-image: url('tic-tac-toe.png');
     background-size: 30px;
 }
 
 @media only screen and (max-width: 1000px) {
 
-    html, header {
-        background-image: url('tic-tac-toe.png');
-        background-size: 30px;
-    }
-
     table td {
         border: 1px solid grey;
         width: 100px;
         height: 100px;
         float: middle;
-        background-color: white;
+        background-color: lightblue !important;
         border-radius: 10px;
+        outline-offset: 4px;
+        transition: filter 250ms;
+        text-transform: capitalize;
+        text-shadow: 1px 1px 1px blue,
+            2px 2px 1px blue;
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        filter: brightness(90%);
     }
 
     table td:hover {
@@ -102,16 +117,33 @@ table td:hover {
     .Stopka {
         display: none;
     }
-}
 
+    .odNowa {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 10px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: white;
+        background-color: #008CBA;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+    }
 
+    .jasny {
+        filter: brightness(120%);
+    }
 
-table td:focus {
-    border: 1px solid grey;
-    width: 110px;
-    height: 110px;
-    background-color: green;
-    border-radius: 10px;
+    #Tryb {
+        width: 30px !important;
+        height: 100px !important;
+        writing-mode: vertical-rl !important;
+        text-orientation: mixed !important;
+    }
+
 }
 
 table {
@@ -149,9 +181,46 @@ table {
     }
 }
 
+.logo2 {
+    margin-top: 35%;
+    opacity: 0.2;
+    pointer-events: none;
+    height: 50vmin;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .logo2 {
+        animation: App-logo-spin2 infinite 60s linear;
+    }
+}
+
+@keyframes App-logo-spin2 {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
 .runda {
-    font-weight: bold;
-    font-size: larger;
+    color: white;
+}
+
+.zwycięzca {
+    color: white;
+    animation: blinking 1s infinite linear;
+}
+
+@keyframes blinking {
+    0% {
+        color: white;
+    }
+
+    100% {
+        color: black;
+    }
 }
 
 .Gra {
@@ -175,4 +244,68 @@ table {
     bottom: 0;
     left: 0;
     width: 100%;
+}
+
+.odNowa {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    background-color: #008CBA;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.odNowa:hover {
+    background-color: #008CBA;
+    filter: brightness(110%);
+}
+
+.odNowa:active {
+    background-color: #008CBA;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    filter: brightness(110%);
+}
+
+#Tryb {
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #008CBA;
+    border: none;
+    border-radius: 20px;
+}
+
+#Tryb:hover {
+    background-color: #008CBA;
+    filter: brightness(110%);
+}
+
+#Tryb:active {
+    background-color: #008CBA;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    filter: brightness(110%);
+}
+
+.jasny {
+    background-color: #59c8ed;
+    background-image: url('tic-tac-toe.png');
+    background-size: 30px;
+}
+
+#przycisk {
+    position: absolute;
+    margin-left: 350px;
+    margin-top: 150px;
 }
